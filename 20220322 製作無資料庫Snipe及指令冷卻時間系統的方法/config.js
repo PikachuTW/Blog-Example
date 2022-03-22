@@ -31,7 +31,7 @@ module.exports = {
         {
             level: 10,
             name: 'Owner',
-            check: (member) => member.id === '',
+            check: (member) => member.id === '650604337000742934',
             // 填入你的id
         },
     ],

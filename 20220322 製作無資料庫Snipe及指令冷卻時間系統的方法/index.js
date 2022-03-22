@@ -9,6 +9,7 @@ const client = new Client({ intents: 32767, partials: ['CHANNEL', 'USER', 'GUILD
 
 const commands = new Collection();
 const aliases = new Collection();
+const snipeData = new Collection();
 
 const levelCache = {};
 for (let i = 0; i < permLevels.length; i++) {
@@ -20,6 +21,7 @@ client.container = {
     commands,
     aliases,
     levelCache,
+    snipeData,
 };
 
 client.fn = functions;
